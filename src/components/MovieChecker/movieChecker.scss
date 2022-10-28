@@ -1,0 +1,21 @@
+#loading {
+  z-index: 20;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: var(--body-g);
+  color: var(--body-t);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & > * {
+    margin-bottom: 20px;
+  }
+  & h1 {
+    font-size: 100px;
+  }
+  & i {
+    font-size: 100px;
+  }
+}

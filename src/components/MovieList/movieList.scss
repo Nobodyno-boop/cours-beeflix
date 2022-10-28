@@ -1,0 +1,82 @@
+.list-movie {
+  & .content {
+    display: flex;
+    flex-wrap: wrap;
+    & .movie {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border-radius: 15px;
+      &:hover {
+        border: 1px rgba($color: rgb(253 224 71), $alpha: 1) solid;
+        transition: all 0.1s ease-in-out;
+      }
+      & img {
+        max-width: calc(300px);
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+// Underline - Right to Left
+
+.list-movie.genre {
+  margin-left: calc(70px);
+
+  & > a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: var(--body-t);
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      bottom: 0;
+      height: 2px;
+      margin: 5px 0;
+      left: 5px;
+      background-color: white;
+      transition: all 0.4s ease-in 0s;
+    }
+    &:hover:after {
+      width: 100%;
+    }
+  }
+
+  & .title {
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+  & .content {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    & .arrow {
+      width: 50px;
+      cursor: pointer;
+      & i {
+        font-size: 50px;
+      }
+    }
+
+    & .movies {
+      display: inline-flex;
+    }
+    & .movie {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      border-radius: 15px;
+      &:hover {
+        border: 1px rgba($color: rgb(253 224 71), $alpha: 1) solid;
+        transition: all 0.1s ease-in-out;
+      }
+      & img {
+        max-width: calc(270px);
+        border-radius: 15px;
+      }
+    }
+  }
+}

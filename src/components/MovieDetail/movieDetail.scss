@@ -1,0 +1,124 @@
+.movie-detail {
+  background: var(--body-g);
+  top: 50px;
+  left: calc(1250px / 4);
+  width: calc(1250px / 1.5);
+  margin-left: calc(200px);
+  border-radius: 5px;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  color: var(--body-t);
+
+  z-index: 5;
+  & .header {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    top: 20px;
+    position: absolute;
+    & h1 {
+      padding: 5px;
+      margin-left: 25px;
+    }
+
+    & .close {
+      display: flex;
+      cursor: pointer;
+      width: 50px;
+      & i {
+        font-size: 25px;
+      }
+    }
+  }
+
+  & img {
+    max-width: calc(1250px / 1.5);
+  }
+
+  & .details {
+    width: 100%;
+
+    & .a {
+      display: inline-flex;
+      width: 100%;
+      margin-bottom: 20px;
+
+      & .detail {
+        margin-left: 20px;
+        width: 100%;
+        & .year {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        & .genres {
+          display: flex;
+          flex-wrap: wrap;
+          & a {
+            text-decoration: none;
+          }
+          & .genre {
+            margin-right: 1rem;
+            margin-top: 10px;
+            padding: 5px;
+            background-color: var(--menu-t);
+            color: var(--body-g);
+            font-weight: bold;
+            border-radius: 11px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    & h3 {
+      margin-bottom: 9px;
+      margin-left: 20px;
+      border-bottom: 2px solid rgba($color: #fefefe, $alpha: 0.7);
+      width: 70%;
+    }
+    & .text {
+      font-size: small;
+      margin-left: 20px;
+      padding-bottom: 20px;
+    }
+
+    & .buttons {
+      display: inline-flex;
+      justify-content: flex-end;
+      width: 100%;
+      & > * {
+        margin-right: 10px;
+      }
+
+      & .watch {
+        width: 70px;
+        height: 40px;
+        border-radius: 10px;
+        background: var(--menu-t);
+        color: var(--body-g);
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      & .favorite {
+        backdrop-filter: blur(50px);
+        background: rgb(79, 89, 88);
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        & i {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 30px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.thumbail {
+  margin-left: calc(200px);
+  margin-top: 20px;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+}
+
+.thumbail-current {
+  & h1 {
+    top: calc(705.5px - 220px);
+    left: 30px;
+    position: absolute;
+  }
+  & img {
+    max-width: 1250px;
+    // max-height: 565.13px;
+    border-radius: 25px;
+    border: 3px rgba($color: white, $alpha: 0.1) solid;
+  }
+  & .details {
+    top: calc(705.5px - 150px);
+    left: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .buttons {
+      display: inline-flex;
+      width: 100%;
+      & > * {
+        margin-left: 10px;
+      }
+    }
+
+    & .description {
+      text-overflow: ellipsis;
+      color: rgba(0, 0, 0, 1);
+    }
+    & .favorite {
+      //   background: #000;
+      backdrop-filter: blur(50px);
+      background: rgb(79, 89, 88);
+      border-radius: 15px;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      & i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        height: 100%;
+      }
+    }
+
+    & .watch {
+      width: 90px;
+      height: 60px;
+      border-radius: 15px;
+      background: var(--menu-t);
+      color: var(--body-g);
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    & .info {
+      width: 60px;
+      height: 60px;
+      color: var(--body-t);
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      & i {
+        font-size: 30px;
+      }
+    }
+  }
+
+  & .nexts {
+    display: inline-flex;
+    top: calc(705.5px - 150px);
+    left: calc(1250px - 500px);
+    position: absolute;
+    & > * {
+      margin-left: 5px;
+    }
+    & .mini {
+      & img {
+        max-width: 150px;
+        &:hover {
+          border: 3px rgba($color: white, $alpha: 0.5) solid;
+          transition: all 0.1s ease-in-out;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  box-shadow: 8.3px 6.6px 5.8px -45px rgba(0, 0, 0, 0.02),
+    16.1px 12.9px 11.6px -45px rgba(0, 0, 0, 0.028),
+    23.9px 19.2px 18px -45px rgba(0, 0, 0, 0.035),
+    33.1px 26.5px 26.7px -45px rgba(0, 0, 0, 0.042),
+    48.3px 38.6px 41.1px -45px rgba(0, 0, 0, 0.05),
+    100px 80px 80px -45px rgba(0, 0, 0, 0.07);
+}
