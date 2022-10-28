@@ -1,11 +1,9 @@
-import { fetchMoviePopular } from '../utils/fetchData'
 import { useLoaderData, Await } from 'react-router-dom'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Layout } from '../layout/layout'
 import { Thumbail } from '../components/Thumbail/Thumbail'
-import { useAppDispatch, useAppSelector } from '../store/hook'
+import { useAppDispatch } from '../store/hook'
 import { set } from '../store/genre'
-import { MovieList } from '../components/MovieList/MovieList'
 import './index.scss'
 import { GenreList } from '../components/GenreList/GenreList'
 export const Index = () => {

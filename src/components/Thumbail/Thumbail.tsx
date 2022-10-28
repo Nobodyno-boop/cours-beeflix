@@ -3,7 +3,6 @@ import { add } from '../../store/favorite'
 import { useAppDispatch, useAppSelector } from '../../store/hook'
 import { open } from '../../store/movieDetail'
 import { Movie, MoviePopular } from '../../utils/fetchData'
-import { MovieDetail } from '../MovieDetail/MovieDetail'
 import './thumbail.scss'
 
 export const Thumbail: React.FC<{ movies: MoviePopular; isMini?: boolean }> = ({

@@ -1,10 +1,8 @@
-import useEvent from '@react-hook/event'
 import { Menu } from '../components/Menu/Menu'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './layout.scss'
 import { MovieDetail } from '../components/MovieDetail/MovieDetail'
 import { Movie } from '../utils/fetchData'
-import { useSelector } from 'react-redux'
 import { useAppSelector } from '../store/hook'
 
 declare global {

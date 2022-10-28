@@ -46,7 +46,7 @@ export const MovieList: React.FC<{
     SetItems([...movies.slice(index), ...movies].slice(0, maxPerList))
 
     return () => {}
-  }, [index])
+  }, [index, maxPerList, movies])
 
   return (
     <div className={classname('list-movie', { genre: genre })}>

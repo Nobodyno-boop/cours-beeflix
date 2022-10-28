@@ -1,5 +1,5 @@
 import { useAppDispatch, useAppSelector } from '../../store/hook'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { fetchMoviePopular } from '../../utils/fetchData'
 import { add } from '../../store/movies'
 import './movieChecker.scss'
