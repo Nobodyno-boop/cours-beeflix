@@ -1,7 +1,7 @@
 import satori from 'satori'
 
 export const DefaultImage = new Promise((r, er) => {
-  fetch('/Poppins-Bold.ttf')
+  fetch('Poppins-Bold.ttf')
     .then((r) => r.arrayBuffer())
     .then((data) => {
       r(
