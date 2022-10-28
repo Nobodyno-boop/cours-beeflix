@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.fba88962.css",
-    "main.js": "/static/js/main.8065c6b5.js",
-    "index.html": "/index.html",
-    "main.fba88962.css.map": "/static/css/main.fba88962.css.map",
-    "main.8065c6b5.js.map": "/static/js/main.8065c6b5.js.map"
+    "main.css": "/cours-beeflix/static/css/main.fba88962.css",
+    "main.js": "/cours-beeflix/static/js/main.372e076c.js",
+    "index.html": "/cours-beeflix/index.html",
+    "main.fba88962.css.map": "/cours-beeflix/static/css/main.fba88962.css.map",
+    "main.372e076c.js.map": "/cours-beeflix/static/js/main.372e076c.js.map"
   },
   "entrypoints": [
     "static/css/main.fba88962.css",
-    "static/js/main.8065c6b5.js"
+    "static/js/main.372e076c.js"
   ]
 }
