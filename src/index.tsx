@@ -9,7 +9,9 @@ import { MovieChecker } from './components/MovieChecker/MovieChecker'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
-const router = createBrowserRouter(routes)
+const router = createBrowserRouter(routes, {
+  basename: '/cours-beeflix/',
+})
 
 root.render(
   <React.StrictMode>

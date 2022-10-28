@@ -46,7 +46,8 @@ export const MovieList: React.FC<{
     SetItems([...movies.slice(index), ...movies].slice(0, maxPerList))
 
     return () => {}
-  }, [index, maxPerList, movies])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index])
 
   return (
     <div className={classname('list-movie', { genre: genre })}>
