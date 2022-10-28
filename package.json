@@ -28,7 +28,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://nobodyno-boop.github.io",
+  "homepage": "https://nobodyno-boop.github.io/cours-beeflix/",
   "eslintConfig": {
     "extends": [
       "react-app",
